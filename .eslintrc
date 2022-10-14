@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@study-sea/eslint-config-vue"
+  ]
+}
