@@ -4,21 +4,24 @@ on:
   push:
     branches:
       - main
-
-jobs:
-  deploy:
+jobs: 
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        id: pnpm-install
         with:
-          node-version: 16
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
+          version: 7
+          run_install: false
 
-      - name: Build
-        run: pnpm docs:build
-
+      - name: Install and Build
+        run: |
+          pnpm install
+          pnpm docs:build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
