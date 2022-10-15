@@ -1,6 +1,16 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, DefaultTheme } from 'vitepress'
 
-const nav = []
+const nav: DefaultTheme.NavItem[] = [
+  {
+    text: '源码阅读系列',
+    items: [
+      {
+        text: '源码阅读系列',
+        link: '/source-code-read/'
+      }
+    ]
+  }
+]
 
 const sidebar = []
 
