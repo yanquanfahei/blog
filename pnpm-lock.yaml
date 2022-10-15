@@ -1,15 +1,17 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@study-sea/eslint-config-vue': ^0.0.7
+  '@study-sea/eslint-config-vue': ^0.0.8
   eslint: ^8.25.0
+  prettier: ^2.7.1
   typescript: ^4.8.4
   vitepress: 1.0.0-alpha.20
   vue: ^3.2.41
 
 devDependencies:
-  '@study-sea/eslint-config-vue': 0.0.7_z4bbprzjrhnsfa24uvmcbu7f5q
+  '@study-sea/eslint-config-vue': 0.0.8_jgy3n4355e6bfws3px3ickn7ti
   eslint: 8.25.0
+  prettier: 2.7.1
   typescript: 4.8.4
   vitepress: 1.0.0-alpha.20
   vue: 3.2.41
@@ -27,6 +29,9 @@ packages:
     peerDependencies:
       '@algolia/client-search': ^4.9.1
       algoliasearch: ^4.9.1
+    peerDependenciesMeta:
+      '@algolia/client-search':
+        optional: true
     dependencies:
       '@algolia/autocomplete-shared': 1.7.1
       algoliasearch: 4.14.2
@@ -267,10 +272,11 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@study-sea/eslint-config-basic/0.0.10_zb5prbqp7qzcgafjm73dfpyyvm:
-    resolution: {integrity: sha512-JpZV21fNe71z7iaurcpYZX0mOJNiUj1aSadhDBmd7bHd9J4/WQbhkFO41nCf0V+B8J2OrPJYZJKCx5wfM3rFcg==}
+  /@study-sea/eslint-config-basic/0.0.11_qdkior6gsajo5oqqzqqadw5bp4:
+    resolution: {integrity: sha512-DNU3BBtdUnqtQKUsqAaoF5yNeXMZq1w9sbwWZgaRxw3utRPay0djeNiec57BGwURwFlbrKnyw7VVuiYfSbaAwQ==}
     peerDependencies:
       eslint: '>=7.28.0'
+      prettier: '>=2.0.0'
     dependencies:
       eslint: 8.25.0
       eslint-config-prettier: 8.5.0_eslint@8.25.0
@@ -288,13 +294,13 @@ packages:
       - supports-color
     dev: true
 
-  /@study-sea/eslint-config-ts/0.0.7_z4bbprzjrhnsfa24uvmcbu7f5q:
-    resolution: {integrity: sha512-vTX03ttd14WievgoWTpRRQfkylE86CaGZ71YwWS1wxXZhBB8CGhwsC0KTDyhzbtjcOGyalYD2KGlA6ZdUFzx0w==}
+  /@study-sea/eslint-config-ts/0.0.8_jgy3n4355e6bfws3px3ickn7ti:
+    resolution: {integrity: sha512-a8gi2hSWfPak/OVdzKl1bxugnGZle/F8qNVC0zt3unpyEKbYKXxPyai4TLaApn7gaDqYHDQetla6k2f28d1JWg==}
     peerDependencies:
       eslint: '>=6.0.0'
       typescript: '>=2.8.0'
     dependencies:
-      '@study-sea/eslint-config-basic': 0.0.10_zb5prbqp7qzcgafjm73dfpyyvm
+      '@study-sea/eslint-config-basic': 0.0.11_qdkior6gsajo5oqqzqqadw5bp4
       '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
       '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
       eslint: 8.25.0
@@ -303,15 +309,16 @@ packages:
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
+      - prettier
       - supports-color
     dev: true
 
-  /@study-sea/eslint-config-vue/0.0.7_z4bbprzjrhnsfa24uvmcbu7f5q:
-    resolution: {integrity: sha512-doxc9kBMTUSakxYAZl0AnquvUhE+jH2+czGcVpqSJI7hMleK4JncQv9S1BzBlLzFicnwgQKtLIsPnSohVontcQ==}
+  /@study-sea/eslint-config-vue/0.0.8_jgy3n4355e6bfws3px3ickn7ti:
+    resolution: {integrity: sha512-Zq4JIm7cZr3k1hUxtF2Y7UHkJylSqQ7Q9VGiCw4C+G090yOwj4B8tG1OqFjJsgThjvzcNyw9qpdUuZy7UFDqRA==}
     peerDependencies:
       eslint: '>=6.0.0'
     dependencies:
-      '@study-sea/eslint-config-ts': 0.0.7_z4bbprzjrhnsfa24uvmcbu7f5q
+      '@study-sea/eslint-config-ts': 0.0.8_jgy3n4355e6bfws3px3ickn7ti
       '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
       eslint: 8.25.0
       eslint-plugin-vue: 9.6.0_eslint@8.25.0
@@ -319,6 +326,7 @@ packages:
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
+      - prettier
       - supports-color
       - typescript
     dev: true
