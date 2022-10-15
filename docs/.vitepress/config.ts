@@ -5,14 +5,32 @@ const nav: DefaultTheme.NavItem[] = [
     text: '源码阅读系列',
     items: [
       {
-        text: '源码阅读系列',
+        text: '引导',
         link: '/source-code-read/'
+      },
+      {
+        text: 'launch-editor',
+        link: '/source-code-read/launch-editor'
       }
     ]
   }
 ]
 
-const sidebar = []
+const sidebar: DefaultTheme.Sidebar = {
+  '/source-code-read/': [
+    {
+      text: '源码阅读系列',
+      collapsible: true,
+      items: [
+        { text: '引导', link: '/source-code-read/' },
+        {
+          text: 'launch-editor',
+          link: '/source-code-read/launch-editor'
+        }
+      ]
+    }
+  ]
+}
 
 export default defineConfig({
   lang: 'zh-CN',
