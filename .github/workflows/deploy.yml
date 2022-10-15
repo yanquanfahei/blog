@@ -1,27 +1,24 @@
-name: Deploy Blog
+name: Deploy
 
 on:
   push:
     branches:
       - main
-jobs: 
-  build-and-deploy:
+
+jobs:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        id: pnpm-install
         with:
-          version: 7
-          run_install: false
+          node-version: 16
+          cache: npm
+      - run: npm install
 
-      - name: Install and Build
-        run: |
-          pnpm install
-          pnpm docs:build
+      - name: Build
+        run: npm run docs:build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
