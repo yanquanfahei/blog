@@ -43,6 +43,10 @@ export default defineConfig({
     logo: '/logo.png',
     lastUpdatedText: '最后更新',
     nav,
-    sidebar
+    sidebar,
+    editLink: {
+      pattern: 'https://github.com/yanquanfahei/blog/blob/main/docs/:path',
+      text: '在 GitHub 上编辑此页面'
+    }
   }
 })
