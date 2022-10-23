@@ -15,6 +15,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'vue3-shared',
         link: '/source-code-read/vue3-shared'
+      },
+      {
+        text: 'vue3-release',
+        link: '/source-code-read/vue3-release'
       }
     ]
   }
@@ -34,6 +38,10 @@ const sidebar: DefaultTheme.Sidebar = {
         {
           text: 'vue3-shared',
           link: '/source-code-read/vue3-shared'
+        },
+        {
+          text: 'vue3-release',
+          link: '/source-code-read/vue3-release'
         }
       ]
     }
