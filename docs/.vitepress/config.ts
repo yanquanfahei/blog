@@ -1,4 +1,5 @@
 import { defineConfig, DefaultTheme } from 'vitepress'
+import fg, { Entry } from 'fast-glob'
 
 const nav: DefaultTheme.NavItem[] = [
   {
@@ -24,26 +25,37 @@ const nav: DefaultTheme.NavItem[] = [
   }
 ]
 
+function getSidebarItems(
+  files: Entry[],
+  indexName: string
+): DefaultTheme.SidebarItem[] {
+  const result: DefaultTheme.SidebarItem[] = []
+  for (const file of files) {
+    const { name, path } = file
+
+    result.push({
+      text: name === 'index.md' ? indexName : name.replace(/\.md$/, ''),
+      link:
+        name === 'index.md'
+          ? path.replace(/docs|index\.md$/g, '')
+          : path.replace(/docs|\.md$/g, '')
+    })
+  }
+  return result
+}
+
+const sourceCodeReadFiles = fg.sync(['docs/source-code-read/*.md'], {
+  objectMode: true
+})
+
+const sourceCodeReadSlider = getSidebarItems(sourceCodeReadFiles, '引导')
+
 const sidebar: DefaultTheme.Sidebar = {
   '/source-code-read/': [
     {
       text: '源码阅读系列',
       collapsible: true,
-      items: [
-        { text: '引导', link: '/source-code-read/' },
-        {
-          text: 'launch-editor',
-          link: '/source-code-read/launch-editor'
-        },
-        {
-          text: 'vue3-shared',
-          link: '/source-code-read/vue3-shared'
-        },
-        {
-          text: 'vue3-release',
-          link: '/source-code-read/vue3-release'
-        }
-      ]
+      items: sourceCodeReadSlider
     }
   ]
 }
