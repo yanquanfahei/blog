@@ -20,6 +20,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'vue3-release',
         link: '/source-code-read/vue3-release'
+      },
+      {
+        text: 'update-notifier',
+        link: '/source-code-read/update-notifier'
       }
     ]
   }
