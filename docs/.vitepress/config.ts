@@ -24,6 +24,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'update-notifier',
         link: '/source-code-read/update-notifier'
+      },
+      {
+        text: 'validate-npm-package-name',
+        link: '/source-code-read/validate-npm-package-name'
       }
     ]
   }
