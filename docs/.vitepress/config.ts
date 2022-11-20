@@ -1,6 +1,4 @@
-import { lstatSync } from 'fs'
 import { defineConfig, DefaultTheme } from 'vitepress'
-import fg, { Entry } from 'fast-glob'
 
 const nav: DefaultTheme.NavItem[] = [
   {
@@ -38,43 +36,12 @@ const nav: DefaultTheme.NavItem[] = [
   }
 ]
 
-function getSidebarItems(
-  files: Entry[],
-  indexName: string
-): DefaultTheme.SidebarItem[] {
-  const result: DefaultTheme.SidebarItem[] = []
-
-  files.sort(
-    (a, b) =>
-      new Date(lstatSync(a.path).ctime).getTime() -
-      new Date(lstatSync(b.path).ctime).getTime()
-  )
-  for (const file of files) {
-    const { name, path } = file
-
-    result.push({
-      text: name === 'index.md' ? indexName : name.replace(/\.md$/, ''),
-      link:
-        name === 'index.md'
-          ? path.replace(/docs|index\.md$/g, '')
-          : path.replace(/docs|\.md$/g, '')
-    })
-  }
-  return result
-}
-
-const sourceCodeReadFiles = fg.sync(['docs/source-code-read/*.md'], {
-  objectMode: true
-})
-
-const sourceCodeReadSlider = getSidebarItems(sourceCodeReadFiles, '引导')
-
 const sidebar: DefaultTheme.Sidebar = {
   '/source-code-read/': [
     {
       text: '源码阅读系列',
       collapsible: true,
-      items: sourceCodeReadSlider
+      items: nav as DefaultTheme.SidebarItem[]
     }
   ]
 }
