@@ -1,3 +1,4 @@
+import { lstatSync } from 'fs'
 import { defineConfig, DefaultTheme } from 'vitepress'
 import fg, { Entry } from 'fast-glob'
 
@@ -28,6 +29,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'validate-npm-package-name',
         link: '/source-code-read/validate-npm-package-name'
+      },
+      {
+        text: 'emitter',
+        link: '/source-code-read/emitter'
       }
     ]
   }
@@ -38,6 +43,12 @@ function getSidebarItems(
   indexName: string
 ): DefaultTheme.SidebarItem[] {
   const result: DefaultTheme.SidebarItem[] = []
+
+  files.sort(
+    (a, b) =>
+      new Date(lstatSync(a.path).ctime).getTime() -
+      new Date(lstatSync(b.path).ctime).getTime()
+  )
   for (const file of files) {
     const { name, path } = file
 
