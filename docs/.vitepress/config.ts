@@ -31,6 +31,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'emitter',
         link: '/source-code-read/emitter'
+      },
+      {
+        text: 'create-vue',
+        link: '/source-code-read/create-vue'
       }
     ]
   }
