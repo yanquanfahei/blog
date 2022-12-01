@@ -35,6 +35,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'create-vue',
         link: '/source-code-read/create-vue'
+      },
+      {
+        text: 'configstore',
+        link: '/source-code-read/configstore'
       }
     ]
   }
