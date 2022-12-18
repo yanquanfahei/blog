@@ -43,6 +43,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'vue-dev-server',
         link: '/source-code-read/vue-dev-server'
+      },
+      {
+        text: 'ni',
+        link: '/source-code-read/ni'
       }
     ]
   }
