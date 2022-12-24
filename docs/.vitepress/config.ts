@@ -47,6 +47,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'ni',
         link: '/source-code-read/ni'
+      },
+      {
+        text: 'open',
+        link: '/source-code-read/open'
       }
     ]
   }
