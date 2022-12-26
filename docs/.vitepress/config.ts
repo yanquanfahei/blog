@@ -55,6 +55,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'remote-git-tags',
         link: '/source-code-read/remote-git-tags'
+      },
+      {
+        text: 'element-ui-init-component',
+        link: '/source-code-read/element-ui-init-component'
       }
     ]
   }
