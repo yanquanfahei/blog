@@ -59,6 +59,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'element-ui-init-component',
         link: '/source-code-read/element-ui-init-component'
+      },
+      {
+        text: 'only-allow',
+        link: '/source-code-read/only-allow'
       }
     ]
   }
