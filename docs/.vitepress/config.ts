@@ -63,6 +63,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'only-allow',
         link: '/source-code-read/only-allow'
+      },
+      {
+        text: 'js-cookie',
+        link: '/source-code-read/js-cookie'
       }
     ]
   }
