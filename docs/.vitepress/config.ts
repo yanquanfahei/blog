@@ -67,6 +67,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'js-cookie',
         link: '/source-code-read/js-cookie'
+      },
+      {
+        text: 'delay',
+        link: '/source-code-read/delay'
       }
     ]
   }
