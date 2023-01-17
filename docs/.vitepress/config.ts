@@ -71,6 +71,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'delay',
         link: '/source-code-read/delay'
+      },
+      {
+        text: 'install-pkg',
+        link: '/source-code-read/install-pkg'
       }
     ]
   }
