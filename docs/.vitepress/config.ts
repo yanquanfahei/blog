@@ -75,6 +75,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'install-pkg',
         link: '/source-code-read/install-pkg'
+      },
+      {
+        text: 'await-to-js',
+        link: '/source-code-read/await-to-js'
       }
     ]
   }
