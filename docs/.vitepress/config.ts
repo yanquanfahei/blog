@@ -79,6 +79,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'await-to-js',
         link: '/source-code-read/await-to-js'
+      },
+      {
+        text: 'dotenv',
+        link: '/source-code-read/dotenv'
       }
     ]
   }
