@@ -83,6 +83,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'dotenv',
         link: '/source-code-read/dotenv'
+      },
+      {
+        text: 'classnames',
+        link: '/source-code-read/classnames'
       }
     ]
   }
