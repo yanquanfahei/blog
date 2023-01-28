@@ -87,6 +87,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'classnames',
         link: '/source-code-read/classnames'
+      },
+      {
+        text: 'read-pkg',
+        link: '/source-code-read/read-pkg'
       }
     ]
   }
