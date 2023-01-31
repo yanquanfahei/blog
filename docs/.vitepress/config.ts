@@ -91,6 +91,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'read-pkg',
         link: '/source-code-read/read-pkg'
+      },
+      {
+        text: 'quick-lru',
+        link: '/source-code-read/quick-lru'
       }
     ]
   }
