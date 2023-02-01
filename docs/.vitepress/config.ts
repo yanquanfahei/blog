@@ -95,6 +95,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'quick-lru',
         link: '/source-code-read/quick-lru'
+      },
+      {
+        text: 'taro-plugin-mini-ci',
+        link: '/source-code-read/taro-plugin-mini-ci'
       }
     ]
   }
