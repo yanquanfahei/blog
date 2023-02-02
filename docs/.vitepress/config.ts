@@ -99,6 +99,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'taro-plugin-mini-ci',
         link: '/source-code-read/taro-plugin-mini-ci'
+      },
+      {
+        text: 'p-limit',
+        link: '/source-code-read/p-limit'
       }
     ]
   }
