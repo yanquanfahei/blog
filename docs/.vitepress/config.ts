@@ -103,6 +103,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'p-limit',
         link: '/source-code-read/p-limit'
+      },
+      {
+        text: 'yocto-queue',
+        link: '/source-code-read/yocto-queue'
       }
     ]
   }
