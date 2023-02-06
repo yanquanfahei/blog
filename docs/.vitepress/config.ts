@@ -107,6 +107,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'yocto-queue',
         link: '/source-code-read/yocto-queue'
+      },
+      {
+        text: 'arrify',
+        link: '/source-code-read/arrify'
       }
     ]
   }
