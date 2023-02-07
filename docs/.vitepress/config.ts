@@ -111,6 +111,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'arrify',
         link: '/source-code-read/arrify'
+      },
+      {
+        text: 'vite-pretty-lint',
+        link: '/source-code-read/vite-pretty-lint'
       }
     ]
   }
