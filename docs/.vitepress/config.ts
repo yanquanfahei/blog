@@ -119,6 +119,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'omit.js',
         link: '/source-code-read/omit.js'
+      },
+      {
+        text: 'release-it',
+        link: '/source-code-read/release-it'
       }
     ]
   }
