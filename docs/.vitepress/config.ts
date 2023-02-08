@@ -115,6 +115,10 @@ const nav: DefaultTheme.NavItem[] = [
       {
         text: 'vite-pretty-lint',
         link: '/source-code-read/vite-pretty-lint'
+      },
+      {
+        text: 'omit.js',
+        link: '/source-code-read/omit.js'
       }
     ]
   }
