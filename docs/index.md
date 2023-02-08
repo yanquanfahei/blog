@@ -15,4 +15,12 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/yanquanfahei/blog
+
+features:
+  - title: 源码阅读系列
+    details: 若川大佬的源码共读系列
+    icon: 🐾
+  - title: NodeJS
+    details: NodeJS 核心模块 API 学习
+    icon: 🐉
 ---
