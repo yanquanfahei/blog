@@ -21,6 +21,6 @@ features:
     details: 若川大佬的源码共读系列
     icon: 🐾
   - title: NodeJS
-    details: NodeJS 核心模块 API 学习
+    details: NodeJS 核心模块 API
     icon: 🐉
 ---
