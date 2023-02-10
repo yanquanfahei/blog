@@ -5,6 +5,10 @@ export default {
     {
       text: '引导',
       link: '/nodejs/'
+    },
+    {
+      text: '断言',
+      link: '/nodejs/assert-testing'
     }
   ]
 } as DefaultTheme.NavItem
