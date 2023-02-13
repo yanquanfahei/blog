@@ -7,8 +7,7 @@ const nav: DefaultTheme.NavItem[] = [sourceCodeRead, nodejs, siteCollection]
 
 const sidebar: DefaultTheme.Sidebar = {
   '/source-code-read/': [sourceCodeRead as DefaultTheme.SidebarGroup],
-  '/nodejs/': [nodejs as DefaultTheme.SidebarGroup],
-  '/site-collection/': [siteCollection as DefaultTheme.SidebarGroup]
+  '/nodejs/': [nodejs as DefaultTheme.SidebarGroup]
 }
 
 export default defineConfig({
