@@ -1,5 +1,5 @@
 import { DefaultTheme } from 'vitepress'
 export default {
-  text: '网站收集',
+  text: '网站导航',
   link: '/site-collection/'
 } as DefaultTheme.NavItem

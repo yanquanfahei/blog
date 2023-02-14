@@ -23,7 +23,7 @@ features:
   - title: NodeJS
     details: NodeJS 核心模块 API
     icon: 🐉
-  - title: 网站集合
+  - title: 网站导航
     details: 学习、工具网站的记录
     icon: 🌿
 ---
