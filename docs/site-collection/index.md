@@ -1,3 +1,6 @@
-# 网站收集
+<script setup>
+import { defineAsyncComponent } from 'vue'
+const WebSite = defineAsyncComponent(() => import('./components/Website.vue'))
+</script>
 
-学习、工具网站的收集记录
+<WebSite />
