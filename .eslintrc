@@ -1,5 +1,8 @@
 {
   "extends": [
     "@study-sea/eslint-config-vue"
-  ]
+  ],
+  "rules": {
+    "max-len": ["error", 100]
+  }
 }
