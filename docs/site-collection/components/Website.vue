@@ -58,6 +58,19 @@ const vueEcology: IWebsiteMap = {
       desc: 'Vue-powered Static Site Generator',
       link: 'https://vuepress.vuejs.org/',
       pic: 'https://vuepress.vuejs.org/hero.png'
+    },
+    {
+      title: 'vueuse',
+      desc: 'Collection of Vue Composition Utilities',
+      link: 'https://vueuse.org/',
+      // eslint-disable-next-line max-len
+      pic: 'https://d33wubrfki0l68.cloudfront.net/2f6479d73bc25170dc532dd42e059166573bf478/61057/favicon.svg'
+    },
+    {
+      title: 'awesome-vue',
+      desc: 'Components & Libraries',
+      link: 'https://github.com/vuejs/awesome-vue#components--librariese',
+      pic: 'https://github.com/vuejs/awesome-vue/raw/master/assets/logo.svg'
     }
   ]
 }
