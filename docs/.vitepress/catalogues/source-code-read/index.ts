@@ -121,6 +121,10 @@ export default {
     {
       text: 'release-it',
       link: '/source-code-read/release-it'
+    },
+    {
+      text: 'stats.js',
+      link: '/source-code-read/stats'
     }
   ]
 } as DefaultTheme.NavItem
