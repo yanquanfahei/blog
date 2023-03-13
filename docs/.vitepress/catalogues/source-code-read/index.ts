@@ -125,6 +125,15 @@ export default {
     {
       text: 'stats.js',
       link: '/source-code-read/stats'
+    },
+    {
+      text: 'vant-ui',
+      items: [
+        {
+          text: '主题',
+          link: '/source-code-read/vant-ui/theme'
+        }
+      ]
     }
   ]
 } as DefaultTheme.NavItem
