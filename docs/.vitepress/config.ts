@@ -2,12 +2,19 @@ import { defineConfig, DefaultTheme } from 'vitepress'
 import sourceCodeRead from './catalogues/source-code-read'
 import nodejs from './catalogues/nodejs'
 import siteCollection from './catalogues/site-collection'
+import dataStructureAndAlgorithm from './catalogues/data-structure-and-algorithm'
 
-const nav: DefaultTheme.NavItem[] = [sourceCodeRead, nodejs, siteCollection]
+const nav: DefaultTheme.NavItem[] = [
+  sourceCodeRead,
+  nodejs,
+  siteCollection,
+  dataStructureAndAlgorithm
+]
 
 const sidebar: DefaultTheme.Sidebar = {
-  '/source-code-read/': [sourceCodeRead as DefaultTheme.SidebarGroup],
-  '/nodejs/': [nodejs as DefaultTheme.SidebarGroup]
+  '/source-code-read/': [sourceCodeRead],
+  '/nodejs/': [nodejs],
+  '/data-structure-and-algorithm/': [dataStructureAndAlgorithm]
 }
 
 export default defineConfig({
