@@ -132,6 +132,10 @@ export default {
         {
           text: '主题',
           link: '/source-code-read/vant-ui/theme'
+        },
+        {
+          text: 'Loading',
+          link: '/source-code-read/vant-ui/loading'
         }
       ]
     }
