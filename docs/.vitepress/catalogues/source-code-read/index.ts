@@ -136,6 +136,10 @@ export default {
         {
           text: 'Loading',
           link: '/source-code-read/vant-ui/loading'
+        },
+        {
+          text: 'List',
+          link: '/source-code-read/vant-ui/list'
         }
       ]
     }
