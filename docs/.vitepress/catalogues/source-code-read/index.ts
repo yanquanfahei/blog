@@ -130,8 +130,8 @@ export default {
       text: 'vant-ui',
       items: [
         {
-          text: '主题',
-          link: '/source-code-read/vant-ui/theme'
+          text: 'ConfigProvider',
+          link: '/source-code-read/vant-ui/configProvider'
         },
         {
           text: 'Loading',
