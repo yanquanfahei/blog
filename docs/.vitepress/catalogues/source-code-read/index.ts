@@ -131,7 +131,7 @@ export default {
       items: [
         {
           text: 'ConfigProvider',
-          link: '/source-code-read/vant-ui/configProvider'
+          link: '/source-code-read/vant-ui/config-provider'
         },
         {
           text: 'Loading',
@@ -140,6 +140,10 @@ export default {
         {
           text: 'List',
           link: '/source-code-read/vant-ui/list'
+        },
+        {
+          text: 'CountDown',
+          link: '/source-code-read/vant-ui/count-down'
         }
       ]
     }
