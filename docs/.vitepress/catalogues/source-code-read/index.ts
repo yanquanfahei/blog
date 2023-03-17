@@ -144,6 +144,10 @@ export default {
         {
           text: 'CountDown',
           link: '/source-code-read/vant-ui/count-down'
+        },
+        {
+          text: 'Lazyload',
+          link: '/source-code-read/vant-ui/lazy-load'
         }
       ]
     }
