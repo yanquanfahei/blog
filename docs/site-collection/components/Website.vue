@@ -97,22 +97,21 @@ const compressWebsite: IWebsiteMap = {
 const websiteSet: Array<IWebsiteMap> = [vueEcology, compressWebsite]
 </script>
 <template>
-  <div class="website-container">
-    <!-- 压缩网站 -->
-    <div
-      v-for="(webSite, siteIdx) in websiteSet"
-      :key="siteIdx"
-      class="website-section rd-2 px-4 py-2 mb-8"
-    >
-      <div class="section-title mb-4 font-600 text-4">
+  <div class="website-container px-5 py-5 sm:px-12 md:px-18">
+    <template v-for="(webSite, siteIdx) in websiteSet" :key="siteIdx">
+      <div class="section-title mb-6 font-bold text-6">
         {{ webSite.title }}
       </div>
-      <div class="section-items flex flex-wrap">
-        <template v-for="(item, idx) in webSite.list" :key="idx">
-          <WebsiteItem :item="item" />
-        </template>
+      <div class="website-section rd-2 p-6 mb-8">
+        <div
+          class="section-items grid gap-y-15 gap-x-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+        >
+          <template v-for="(item, idx) in webSite.list" :key="idx">
+            <WebsiteItem :item="item" />
+          </template>
+        </div>
       </div>
-    </div>
+    </template>
   </div>
 </template>
 
