@@ -127,6 +127,10 @@ export default {
       link: '/source-code-read/stats'
     },
     {
+      text: 'history',
+      link: '/source-code-read/history'
+    },
+    {
       text: 'vant-ui',
       items: [
         {
